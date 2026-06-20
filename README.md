@@ -1,12 +1,68 @@
-👨‍💻 Passionate about Web Development with a focus on creating scalable and efficient applications.
-🌱 Currently expanding my skills in React, Node.js, MongoDB, and Express.
-🤝 Open to collaboration on full-stack projects, open-source contributions, and innovative web solutions.
-📫 You can reach me via email at musaabballa95@gmail.com .
-😄 Pronouns: He/Him. 
-⚡ Fun fact: I enjoy tackling complex problems and continuously learning new technologies to enhance my development skills
+# Hi, I'm Musaab 👋
 
+Cloud & DevOps Engineer with a background in Full-Stack Development (MERN Stack) and hands-on experience designing, deploying, and managing cloud infrastructure on AWS.
 
-<!---
-Mus7ab/Mus7ab is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I specialize in cloud computing, infrastructure automation, Linux administration, containerization, and DevOps practices. My focus is on building secure, scalable, and highly available systems while applying industry best practices in automation, monitoring, and continuous delivery.
+
+## Core Competencies
+
+### Cloud Computing
+
+* AWS IAM
+* EC2
+* S3
+* VPC
+* Route 53
+* RDS
+* CloudFront
+* Load Balancers
+* Auto Scaling
+* Lambda
+* SQS
+* SNS
+
+### DevOps & Automation
+
+* Docker
+* Kubernetes
+* Terraform
+* GitHub Actions
+* CI/CD Pipelines
+* Infrastructure as Code (IaC)
+
+### Linux & System Administration
+
+* Linux Administration
+* SSH
+* Networking Fundamentals
+* Nginx
+* Process Management
+* System Services
+* Troubleshooting
+
+### Development
+
+* JavaScript
+* React.js
+* Node.js
+* Express.js
+* MongoDB
+* REST APIs
+
+## Current Projects
+
+* AWS IAM Labs
+* AWS VPC Labs
+* AWS EC2 Labs
+* Terraform Labs
+* Docker Labs
+* Kubernetes Labs
+
+## Professional Goals
+
+Building cloud-native solutions, automating infrastructure, and contributing to modern DevOps practices while delivering secure and scalable systems.
+
+## Connect With Me
+
+* LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
+* GitHub: https://github.com/YOUR-USERNAME
