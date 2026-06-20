@@ -64,5 +64,5 @@ Building cloud-native solutions, automating infrastructure, and contributing to 
 
 ## Connect With Me
 
-* LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN
-* GitHub: https://github.com/YOUR-USERNAME
+* LinkedIn: www.linkedin.com/in/musaab-mohamedani-3b2b72337
+* GitHub: https://github.com/Mus7ab
