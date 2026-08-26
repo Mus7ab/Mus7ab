@@ -350,5 +350,5 @@ Multi-environment AWS infrastructure
 I'm interested in AWS Cloud Engineer, Cloud Engineer, and DevOps Engineer opportunities where I can contribute to cloud infrastructure, automation, CI/CD, containerization, DevSecOps, and reliable AWS systems.
 
 🔗 Connect With Me
-GitHub
-LinkedIn
+GitHub: https://github.com/Mus7ab
+LinkedIn: www.linkedin.com/in/musaabmohamedan1
