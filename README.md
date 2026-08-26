@@ -4,7 +4,7 @@
 
 I build **secure, scalable, and automated AWS infrastructure** using Infrastructure as Code, containers, Kubernetes, and CI/CD.
 
-My work focuses on turning cloud architecture into **repeatable, maintainable, and observable environments** using AWS, Terraform, Docker, Kubernetes, GitHub Actions, and Linux.
+My work focuses on turning cloud architecture into **repeatable, maintainable, observable, and secure environments** using AWS, Terraform, Docker, Kubernetes, GitHub Actions, Linux, and DevSecOps practices.
 
 With a background in Full-Stack Development (MERN), I also understand the application side of the systems I deploy and automate.
 
@@ -12,14 +12,15 @@ With a background in Full-Stack Development (MERN), I also understand the applic
 
 ## ☁️ What I Build
 
-* 🏗️ AWS cloud infrastructure with clear network and security boundaries
-* 🔐 IAM and least-privilege access controls
-* ⚙️ Terraform-managed and repeatable infrastructure
-* 🐳 Containerized microservices on AWS ECS Fargate
-* ☸️ Kubernetes workloads on Amazon EKS
-* 🔄 CI/CD pipelines with GitHub Actions
-* ⚡ Event-driven and serverless AWS architectures
-* 📊 Monitoring and observability with CloudWatch, Prometheus, Grafana, and X-Ray
+- 🏗️ AWS cloud infrastructure with clear network and security boundaries
+- 🔐 IAM and least-privilege access controls
+- ⚙️ Terraform-managed and repeatable infrastructure
+- 🐳 Containerized microservices on AWS ECS Fargate
+- ☸️ Kubernetes workloads on Amazon EKS
+- 🔄 CI/CD pipelines with GitHub Actions
+- 🛡️ DevSecOps security scanning and CI/CD security gates
+- ⚡ Event-driven and serverless AWS architectures
+- 📊 Monitoring and observability with CloudWatch, Prometheus, Grafana, and X-Ray
 
 ---
 
@@ -27,37 +28,44 @@ With a background in Full-Stack Development (MERN), I also understand the applic
 
 ### 🔐 Security
 
-* IAM roles and scoped permissions
-* Security-group-based access control
-* Private RDS database deployments
-* SSM Session Manager for keyless EC2 administration
-* IAM Roles for Service Accounts (IRSA)
-* Least-privilege network paths
+- IAM roles and scoped permissions
+- Security-group-based access control
+- Private RDS database deployments
+- SSM Session Manager for keyless EC2 administration
+- IAM Roles for Service Accounts (IRSA)
+- Least-privilege network paths
+- Infrastructure security scanning with Trivy and Checkov
+- Container security scanning with Trivy
+- Kubernetes security analysis
+- Secrets detection with gitleaks
+- Documented security exceptions and accepted-risk decisions
+- CI/CD security enforcement with GitHub Actions
 
 ### 🛡️ Reliability
 
-* Multi-AZ VPC and compute architectures
-* Application Load Balancing
-* EC2 Auto Scaling
-* Health-checked traffic routing
-* Kubernetes health and scaling mechanisms
-* SQS Dead Letter Queues for failure isolation
+- Multi-AZ VPC and compute architectures
+- Application Load Balancing
+- EC2 Auto Scaling
+- Health-checked traffic routing
+- Kubernetes health and scaling mechanisms
+- SQS Dead Letter Queues for failure isolation
 
 ### ⚙️ Automation
 
-* Terraform Infrastructure as Code
-* Reusable Terraform modules
-* Remote Terraform state
-* GitHub Actions CI/CD
-* Automated Terraform plan/apply workflows
-* Helm-based Kubernetes deployments
+- Terraform Infrastructure as Code
+- Reusable Terraform modules
+- Remote Terraform state
+- GitHub Actions CI/CD
+- Automated Terraform plan/apply workflows
+- Helm-based Kubernetes deployments
+- Automated security scanning in CI/CD
 
 ### 📊 Observability
 
-* Amazon CloudWatch
-* Prometheus
-* Grafana
-* AWS X-Ray
+- Amazon CloudWatch
+- Prometheus
+- Grafana
+- AWS X-Ray
 
 ---
 
@@ -69,21 +77,21 @@ A production-style 3-tier AWS architecture with a **public ALB, EC2 Auto Scaling
 
 ### Architecture & Engineering
 
-* VPC spanning 2 Availability Zones
-* Public and private subnet structure
-* Application Load Balancer
-* EC2 Auto Scaling Group with a minimum of 2 instances
-* Private Single-AZ PostgreSQL RDS
-* Security-group chaining: ALB → EC2 → RDS
-* SSM Session Manager instead of SSH
-* Remote Terraform state in Amazon S3
-* GitHub Actions Terraform plan/apply workflow
+- VPC spanning 2 Availability Zones
+- Public and private subnet structure
+- Application Load Balancer
+- EC2 Auto Scaling Group with a minimum of 2 instances
+- Private Single-AZ PostgreSQL RDS
+- Security-group chaining: ALB → EC2 → RDS
+- SSM Session Manager instead of SSH
+- Remote Terraform state in Amazon S3
+- GitHub Actions Terraform plan/apply workflow
 
 **Stack:** AWS • Terraform • VPC • ALB • EC2 • Auto Scaling • RDS • S3 • IAM • SSM • GitHub Actions
 
 > **Design note:** RDS is intentionally Single-AZ for this portfolio project. Multi-AZ RDS would be the appropriate next step for a production workload requiring database high availability.
 
-🔗 **[Repository](https://github.com/Mus7ab/three-tier-webapp)**
+🔗 [**Repository**](https://github.com/Mus7ab/three-tier-webapp)
 
 ---
 
@@ -93,19 +101,19 @@ A containerized **Orders + Users microservices platform** deployed to AWS ECS Fa
 
 ### Architecture & Engineering
 
-* Independent Orders and Users services
-* Dockerized workloads
-* Amazon ECS Fargate
-* Application Load Balancer
-* Path-based routing
-* Multi-AZ ECS deployment
-* Amazon ECR container images
-* Terraform infrastructure
-* GitHub Actions CI/CD
+- Independent Orders and Users services
+- Dockerized workloads
+- Amazon ECS Fargate
+- Application Load Balancer
+- Path-based routing
+- Multi-AZ ECS deployment
+- Amazon ECR container images
+- Terraform infrastructure
+- GitHub Actions CI/CD
 
 **Stack:** AWS • ECS Fargate • Docker • ECR • ALB • Terraform • GitHub Actions • Node.js
 
-🔗 **[Repository](https://github.com/Mus7ab/microservices-orders-users)**
+🔗 [**Repository**](https://github.com/Mus7ab/microservices-orders-users)
 
 ---
 
@@ -115,20 +123,20 @@ A production-style Kubernetes environment for deploying and monitoring container
 
 ### Architecture & Engineering
 
-* Amazon EKS
-* Kubernetes workloads
-* Helm charts
-* NGINX Ingress
-* AWS Network Load Balancer
-* IAM Roles for Service Accounts (IRSA)
-* Prometheus monitoring
-* Grafana dashboards
-* Kubernetes autoscaling
-* GitHub Actions deployment automation
+- Amazon EKS
+- Kubernetes workloads
+- Helm charts
+- NGINX Ingress
+- AWS Network Load Balancer
+- IAM Roles for Service Accounts (IRSA)
+- Prometheus monitoring
+- Grafana dashboards
+- Kubernetes autoscaling
+- GitHub Actions deployment automation
 
 **Stack:** AWS EKS • Kubernetes • Helm • Docker • NGINX Ingress • NLB • IRSA • Prometheus • Grafana • GitHub Actions
 
-🔗 **[Repository](https://github.com/Mus7ab/eks-kubernetes-microservices)**
+🔗 [**Repository**](https://github.com/Mus7ab/eks-kubernetes-microservices)
 
 ---
 
@@ -138,18 +146,18 @@ Production-inspired AWS infrastructure demonstrating **repeatable Terraform depl
 
 ### Architecture & Engineering
 
-* Reusable Terraform modules
-* Environment isolation
-* Isolated remote state
-* Environment-specific configuration
-* IAM controls
-* Resource tagging
-* GitHub Actions CI/CD
-* Approval-gated promotion between environments
+- Reusable Terraform modules
+- Environment isolation
+- Isolated remote state
+- Environment-specific configuration
+- IAM controls
+- Resource tagging
+- GitHub Actions CI/CD
+- Approval-gated promotion between environments
 
 **Stack:** AWS • Terraform • GitHub Actions • IAM • S3 • Infrastructure as Code
 
-🔗 **[Repository](https://github.com/Mus7ab/terraform-multi-env-iac)**
+🔗 [**Repository**](https://github.com/Mus7ab/terraform-multi-env-iac)
 
 ---
 
@@ -174,113 +182,173 @@ EventBridge
 SQS SQS      SQS
  ↓   ↓        ↓
 Email Warehouse Inventory
-```
+Engineering
+API Gateway
+AWS Lambda
+DynamoDB
+EventBridge
+SNS fan-out
+Multiple SQS consumers
+Dead Letter Queues
+CloudWatch monitoring
+AWS X-Ray tracing
+Modular Terraform Infrastructure as Code
+Tested SNS fan-out and message delivery
 
-### Engineering
+Stack: AWS • Terraform • API Gateway • Lambda • DynamoDB • EventBridge • SNS • SQS • CloudWatch • X-Ray
 
-* API Gateway
-* AWS Lambda
-* DynamoDB
-* EventBridge
-* SNS fan-out
-* Multiple SQS consumers
-* Dead Letter Queues
-* CloudWatch monitoring
-* AWS X-Ray tracing
-* Modular Terraform Infrastructure as Code
-* Tested SNS fan-out and message delivery
+🔗 Repository
+6. DevSecOps Security
 
-**Stack:** AWS • Terraform • API Gateway • Lambda • DynamoDB • EventBridge • SNS • SQS • CloudWatch • X-Ray
+A security retrofit across four earlier portfolio projects — Terraform/IaC, containers, Kubernetes, and a serverless API — demonstrating a full security lifecycle: threat modeling, detection, triage, remediation, verification, and CI/CD enforcement.
 
-🔗 **[Repository](https://github.com/Mus7ab/serverless-order-platform)**
+The project focuses on understanding what security findings actually mean rather than blindly fixing every scanner result.
 
----
+Security Domains
+Infrastructure as Code security
+Container security
+Kubernetes security
+Application security
+Secrets security
+Security Tools
+Trivy
+Checkov
+gitleaks
+Helm
+kind
+GitHub Actions
+Security Engineering
+Threat modeling before scanning
+Terraform/IaC security analysis
+Container vulnerability and misconfiguration scanning
+Kubernetes security analysis using rendered Helm manifests
+Application security analysis
+Secrets detection across repository history
+Documented security exceptions
+Accepted-risk decisions with justification
+Remediation and rescanning
+Runtime Kubernetes verification
+CI/CD security gates
+CI/CD Security Pipeline
+Source Code
+     ↓
+Threat Model First
+     ↓
+Security Scanning
+ ┌───┼──────────────┐
+ ↓   ↓              ↓
+Trivy Checkov    gitleaks
+ └───┼──────────────┘
+     ↓
+ Real Finding?
+ ┌───┼──────────────┐
+ ↓   ↓              ↓
+Fix  Document      Deprioritize
+ ↓   Exception       ↓
+Rescan + Verify     Report
+ └───────┬──────────┘
+         ↓
+ GitHub Actions CI Gate
+         ↓
+ HIGH/CRITICAL → Block
+ Pass → Continue
+Key Evidence
+10 documented findings across the security domains
+5 remediations
+2 formally documented accepted-risk exceptions
+Real GitHub Actions CI failure caused by HIGH-severity Kubernetes findings
+Remediation of the CI-detected Kubernetes security gap
+Live fail → fix → pass verification on GitHub Actions
+Kubernetes runtime verification using a local kind cluster
+Secrets scanning across repository history
+Security Engineering Principle
 
-## 6. AWS Static Website Hosting
+The project follows:
 
-A static website hosted using **Amazon S3**, demonstrating S3 website hosting, bucket policies, IAM access, and basic cloud security.
+Find → Understand → Classify → Remediate or Accept → Verify → Enforce
 
-### Architecture & Engineering
+The goal was not to make every scanner result disappear. The goal was to demonstrate security reasoning, remediation judgment, verification, and automated enforcement.
 
-* Amazon S3 static website hosting
-* S3 bucket policy
-* IAM-based administration
-* Public website endpoint
-* HTML/CSS deployment
+🔗 Repository
 
-**Stack:** AWS S3 • IAM • HTML • CSS
+7. AWS Static Website Hosting
 
-> **Planned improvements:** CloudFront, HTTPS with ACM, Route 53 custom domain, GitHub Actions deployment, and Terraform-based infrastructure.
+A static website hosted using Amazon S3, demonstrating S3 website hosting, bucket policies, IAM access, and basic cloud security.
 
-🔗 **[Repository](https://github.com/Mus7ab/aws-static-website-hosting)**
+Architecture & Engineering
+Amazon S3 static website hosting
+S3 bucket policy
+IAM-based administration
+Public website endpoint
+HTML/CSS deployment
 
----
+Stack: AWS S3 • IAM • HTML • CSS
 
-# 🛠️ Core Technologies
+Planned improvements: CloudFront, HTTPS with ACM, Route 53 custom domain, GitHub Actions deployment, and Terraform-based infrastructure.
 
-### AWS & Cloud
+🔗 Repository
+
+🛠️ Core Technologies
+AWS & Cloud
 
 AWS IAM • VPC • EC2 • S3 • RDS • Route 53 • CloudFront • ALB • Auto Scaling • ECS Fargate • EKS • Lambda • API Gateway • DynamoDB • EventBridge • SNS • SQS • CloudWatch • X-Ray
 
-### Infrastructure & DevOps
+Infrastructure & DevOps
 
 Terraform • Infrastructure as Code • Docker • Kubernetes • Helm • GitHub Actions • CI/CD • Automated Deployments
 
-### Monitoring & Observability
+Security & DevSecOps
+
+Trivy • Checkov • gitleaks • DevSecOps • IaC Security • Container Security • Kubernetes Security • Application Security • Secrets Detection
+
+Monitoring & Observability
 
 Prometheus • Grafana • CloudWatch • X-Ray
 
-### Linux & Networking
+Linux & Networking
 
 Linux • SSH • SSM • Nginx • DNS • TCP/IP • Networking Fundamentals • Process Management • System Services • Troubleshooting
 
-### Development Background
+Development Background
 
 JavaScript • React.js • Node.js • Express.js • MongoDB • REST APIs
 
----
+📈 Engineering Progression
 
-# 📈 Engineering Progression
+My portfolio demonstrates a progression from foundational AWS services to complete cloud architectures and security automation:
 
-My portfolio demonstrates a progression from foundational AWS services to complete cloud architectures:
-
-**AWS Static Website Hosting**
+AWS Static Website Hosting
 ↓
-**3-Tier AWS Infrastructure**
+3-Tier AWS Infrastructure
 ↓
-**Containerized Microservices on ECS Fargate**
+Containerized Microservices on ECS Fargate
 ↓
-**Kubernetes on Amazon EKS**
+Kubernetes on Amazon EKS
 ↓
-**Multi-Environment Terraform Infrastructure**
+Multi-Environment Terraform Infrastructure
 ↓
-**Event-Driven Serverless Architecture**
+Event-Driven Serverless Architecture
+↓
+DevSecOps Security & CI/CD Enforcement
 
-The goal is to demonstrate not only knowledge of individual technologies, but how they work together to build **secure, automated, scalable, and reliable cloud systems**.
+The goal is to demonstrate not only knowledge of individual technologies, but how they work together to build secure, automated, scalable, reliable, and maintainable cloud systems.
 
----
-
-# 🎯 Current Focus
+🎯 Current Focus
 
 Currently deepening my expertise in:
 
-* Kubernetes and Amazon EKS
-* AWS security and IAM
-* Infrastructure automation with Terraform
-* CI/CD and deployment automation
-* Cloud observability and troubleshooting
-* Reliability and high-availability architecture
-* Multi-environment AWS infrastructure
+Kubernetes and Amazon EKS
+AWS security and IAM
+Infrastructure automation with Terraform
+CI/CD and deployment automation
+DevSecOps and cloud security
+Cloud observability and troubleshooting
+Reliability and high-availability architecture
+Multi-environment AWS infrastructure
+💼 Open to Opportunities
 
----
+I'm interested in AWS Cloud Engineer, Cloud Engineer, and DevOps Engineer opportunities where I can contribute to cloud infrastructure, automation, CI/CD, containerization, DevSecOps, and reliable AWS systems.
 
-# 💼 Open to Opportunities
-
-I'm interested in **AWS Cloud Engineer, Cloud Engineer, and DevOps Engineer opportunities** where I can contribute to cloud infrastructure, automation, CI/CD, containerization, and reliable AWS systems.
-
----
-
-# 🤝 Connect With Me
-
-* 💼 **LinkedIn:** [linkedin.com/in/musaabmohamedan1](https://www.linkedin.com/in/musaabmohamedan1)
-* 📧 **Email:** [musaab.cloud@gmail.com](mailto:musaab.cloud@gmail.com)
+🔗 Connect With Me
+GitHub
+LinkedIn
