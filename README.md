@@ -351,9 +351,8 @@ I'm interested in AWS Cloud Engineer, Cloud Engineer, and DevOps Engineer opport
 
 ## 🔗 Connect With Me
 
-## 🔗 Connect With Me
-
 * 🌐 **GitHub:** [Mus7ab](https://github.com/Mus7ab)
 * 💼 **LinkedIn:** [Musaab Mohamedani](https://www.linkedin.com/in/musaabmohamedan1)
+
 
 
